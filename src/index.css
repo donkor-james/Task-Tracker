@@ -1,3 +1,7 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,114 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.form1{
+  position: relative;
+  max-width:590px ;
+  min-height: 420px;
+  margin: 35px auto;
+  border: 2px solid;
+  padding: 30px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn{
+  padding: 8px 16px;
+  background-color: rgb(6, 110, 6);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 3px;
+}
+
+.task-wrapper{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+}
+
+.taskText{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task{
+  margin-right: 80px;
+  width: 448px;
+  padding: 17px 15px;
+  background-color: rgb(224, 227, 227);
+  margin-bottom: 4px;
+}
+
+.FaTimes{
+  color: red;
+}
+
+input{
+  margin-top: 18px;
+}
+
+input[type="checkbox"]::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  /* margin-right: 10px; */
+  background-color: #fff; /* Change this to the desired color */
+  border: 1px solid #5f5f5fc0;
+}
+
+input[type="checkbox"]:checked::before {
+  content: '\2713'; /* Use a checkmark symbol for the checked state */
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 16px;
+  color:rgb(6, 110, 6); /* Change this to the desired color */
+  background-color: white; /* Change this to the desired color */
+}
+
+.reminder{
+  position: absolute;
+  right: 18px;
+  top: 330px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form{
+  margin-bottom: 67px;
+}
+
+.input-task, .input-day{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-task label, .input-day label{
+  margin-bottom: -10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input-task input, .input-day input{
+  margin-bottom: 15px;
+  padding: 12px;
+  max-width: 90%;
+}
+
+.Submit-btn{
+  padding: 12px  24px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 2px;
 }
